@@ -26,7 +26,7 @@ namespace _04_VraagNaam_MH
             // Stap 2: Maak de juiste tekst
             //_bewerking = "Hallo {0} " + _naamGebruiker;
             // _bewerking = String.Format("hallo {0}", _naamGebruiker;
-            _bewerking = $"Hallo {_naamGebruiker}";
+            _bewerking = $"Hallo {_naamGebruiker} \nMijn naam is Tom en ik ben de programmeur.";
 
             // Scherm wissen
             Console.Clear();
