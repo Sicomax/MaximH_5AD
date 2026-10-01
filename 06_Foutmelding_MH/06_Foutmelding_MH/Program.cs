@@ -28,7 +28,7 @@ namespace _06_Foutmelding_MH
                 _getal = int.Parse(Console.ReadLine());
 
                 //Stap 2: Toon de tekst of de foutmelding
-                Console.WriteLine("Getal ontvangen.");
+                Console.WriteLine($"U gaf het volgende getal in: {_getal.ToString()}");
 
             }
             catch
