@@ -17,15 +17,28 @@ namespace _06_Foutmelding_MH
 
 
             //Velden
-
+            int _getal = 0;
 
             //Programma
 
-            //Stap 1: Vraag een getal + opslaan
+            try
+            {
+                //Stap 1: Vraag een getal + opslaan
+                Console.Write("Geef een natuurlijk getal: ");
+                _getal = int.Parse(Console.ReadLine());
 
-            //Stap 2: Toonn de tekst of de foutmelding
+                //Stap 2: Toon de tekst of de foutmelding
+                Console.WriteLine("Getal ontvangen.");
 
+            }
+            catch
+            {
+                //Scherm leegmaken
+                Console.Clear();
 
+                //Stap 2: of toon de foutmelding
+                Console.WriteLine("Er ging iets fout.");
+            }
         }
     }
 }
