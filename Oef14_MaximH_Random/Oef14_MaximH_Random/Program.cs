@@ -48,7 +48,7 @@ namespace Oef14_MaximH_Random
                         _getal2 = _rdm2.Next();
 
                         // Toon ze op het scherm
-                        Console.WriteLine($"De twee getallen zijn {_getal1.ToString()} en {_getal2.ToString()   }");
+                        Console.WriteLine($"De twee getallen zijn {_getal1.ToString()} en {_getal2.ToString()}");
                         Console.WriteLine("Druk op enter om verder te gaan.");
                         Console.ReadKey();
                     }
