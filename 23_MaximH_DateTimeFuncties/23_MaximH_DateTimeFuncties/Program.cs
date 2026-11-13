@@ -70,7 +70,51 @@ namespace _23_MaximH_DateTimeFuncties
 
             // Je moet een variabele gebruiken van het datatype TimeSpan.
             TimeSpan verschil = datum2 - _datum;
-            Console.WriteLine($"{verschil.ToString()}");
+            Console.WriteLine($"{verschil.ToString()}\n");
+
+            double aantalDagen = verschil.Days; // Geeft het aantal dagen afgerond
+            double aantalDagen2 = verschil.TotalDays; // Kan een kommagetal zijn
+
+            Console.WriteLine($"Days = {aantalDagen.ToString()} en totalDays = {aantalDagen2.ToString()}\n");
+
+            double aantalUren = verschil.Hours; // Geeft het aantal dagen afgerond
+            double aantalUren2 = verschil.TotalHours; // Kan een kommagetal zijn
+
+            Console.WriteLine($"Hours = {aantalUren.ToString()} en totalHours = {aantalUren2.ToString()}\n");
+
+            Console.WriteLine("\nDruk op enter om verder te gaan.");
+            Console.ReadKey();
+
+            // Laat de gebruiker een datum ingeven
+            // Scherm wissen
+            Console.Clear();
+
+            Console.Write("\nGeef een datum in (dd/mm/jjjj): ");
+            string datum = Console.ReadLine();
+
+            // Laat de gebruiker een tijdstip ingeven
+            Console.Write("\nGeef een bepaald tijdstip van deze dag in (hh:mm): ");
+            string tijdstip = Console.ReadLine();
+
+            try
+            {
+                DateTime ingegevenDatum = DateTime.Parse($"{datum} {tijdstip}");
+
+                // Bevestiging
+                Console.WriteLine("Gelukt!");
+                Console.WriteLine("\nDruk op enter om verder te gaan.");
+                Console.ReadKey();
+            }
+            catch
+            {
+                // Scherm wissen
+                Console.Clear();
+
+                // Foutmelding
+                Console.WriteLine("Er ging iets fout.");
+                Console.WriteLine("\nDruk op enter om verder te gaan.");
+                Console.ReadKey();
+            }
         }
     }
 }
